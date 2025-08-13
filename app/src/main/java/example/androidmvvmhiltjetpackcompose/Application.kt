@@ -1,4 +1,4 @@
-package com.example.androidmvvmhiltjetpackcompose
+package example.androidmvvmhiltjetpackcompose
 
 import android.app.Application
 import android.util.Log
@@ -8,7 +8,7 @@ import dagger.hilt.android.HiltAndroidApp
 class Application : Application() {
     override fun onCreate() {
         super.onCreate()
-        Log.d(TAG,"Entering_onCreate()")
+        Log.d(TAG,"onCreate Success()")
     }
 
     companion object{

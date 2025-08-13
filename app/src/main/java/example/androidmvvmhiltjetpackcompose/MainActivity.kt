@@ -1,23 +1,23 @@
-package com.example.androidmvvmhiltjetpackcompose
+package example.androidmvvmhiltjetpackcompose
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.Text
-import com.example.androidmvvmhiltjetpackcompose.ui.theme.AndroidMvvmHiltJetpackComposeTheme
-import com.example.news.TestNews
+import example.androidmvvmhiltjetpackcompose.view.NewsScreen
 import dagger.hilt.android.AndroidEntryPoint
+import example.androidmvvmhiltjetpackcompose.ui.theme.AndroidMvvmHiltJetpackComposeTheme
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity : androidx.activity.ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             AndroidMvvmHiltJetpackComposeTheme {
                 Text(text = "Hello Android")
-                TestNews()
+                NewsScreen()
             }
         }
     }

@@ -1,4 +1,4 @@
-package com.example.news.ui.theme
+package example.androidmvvmhiltjetpackcompose.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
